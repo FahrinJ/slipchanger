@@ -55,5 +55,5 @@ TextButton.TextSize = 38.000
 TextButton.MouseButton1Down:Connect(function()
     if password.Text == "tgh2Ib4zSTF430kwNPYdAXFMqTbIxl42" then
 		LoginFrame.Visible = false
-		function
+		loadstring(game:HttpGet'https://raw.githubusercontent.com/FahrinJ/slipchanger/main/Hydra33.lua')()
 end
