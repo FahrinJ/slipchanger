@@ -5428,7 +5428,6 @@ movement:Element("Toggle", "bunny hop")
 movement:Element("Dropdown", "direction", {options = {"forward", "directional", "directional 2"}}) 
 movement:Element("Dropdown", "type", {options = {"gyro", "cframe"}}) 
 movement:Element("Slider", "speed", {min = 15, max = 300, default = 40}) 
-movement:Element("Toggle", "bunny hop indicator") 
 movement:Element("ToggleKeybind", "noclip",{},function(tbl)
 	spawn(function()
 		while values.misc.movement["noclip"].Toggle and values.misc.movement["noclip"].Active do
@@ -6351,16 +6350,6 @@ RunService.RenderStepped:Connect(function(step)
 				end)() 
 			end 
 		end 
-		if values.misc.movement["bunny hop"].Toggle and values.misc.movement["bunny hop indicator"].Toggle then
-			game.CoreGui.Indicator24.Enabled = true
-		    	if UserInputService:IsKeyDown("Space") then
-		    		game.CoreGui.Indicator24.BHIndicators.TextColor3 = Color3.fromRGB(178, 0, 255)
-	        	else
-               			game.CoreGui.Indicator24.BHIndicators.TextColor3 = Color3.fromRGB(90, 9, 141)
-            		end	
-	    	else
-			game.CoreGui.Indicator24.Enabled = false
-		end
 
 		
 		Jitter = not Jitter 
