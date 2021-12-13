@@ -1,4 +1,4 @@
---salad.tk script
+--Hydra
 
 getgenv().values = {}
 local library = {} 
@@ -124,11 +124,6 @@ function library:New(name)
 	local Players = game:GetService("Players") 
 	local LocalPlayer = Players.LocalPlayer 
 	local Mouse = LocalPlayer:GetMouse() 
-
-	game:GetService("RunService").RenderStepped:connect(function() 
-		cursor.Visible = Hydra.Enabled 
-		cursor.Position = UDIM2(0,Mouse.X-32,0,Mouse.Y-28) 
-	end) 
 
 	Menu.Name = "Menu" 
 	Menu.Parent = Hydra 
