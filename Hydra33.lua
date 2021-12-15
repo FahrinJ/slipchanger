@@ -12,7 +12,7 @@ local txt = game:GetService("TextService")
 local TweenService = game:GetService("TweenService") 
 function library:Tween(...) TweenService:Create(...):Play() end 
 local cfglocation = "hydracfg/" 
-makefolder("hdyracfg") 
+makefolder("hydracfg") 
 
 
 -- caching 
