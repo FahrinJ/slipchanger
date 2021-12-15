@@ -4703,7 +4703,7 @@ aimbot:Element("Jumbobox", "resolver", {options = {"pitch", "roll", "animation"}
 aimbot:Element("Toggle", "delay shot") 
 aimbot:Element("Toggle", "force hit")
 aimbot:Element("Dropdown", "prediction", {options = {"off", "cframe", "velocity"}}) 
-aimbot:Element("Toggle", "get real") 
+aimbot:Element("Toggle", "Nazi Aim(Very Good)") 
 aimbot:Element("Toggle", "teammates") 
 aimbot:Element("Toggle", "auto baim") 
 aimbot:Element("Toggle", "knifebot") 
@@ -4777,7 +4777,7 @@ antiaim:Element("Slider", "spin speed", {min = 1, max = 69, default = 10})
 antiaim:Element("Slider", "high pos", {min = -3, max = 20, default = 2})
 
 local others = rage:Sector("others", "Right") 
-others:Element("Toggle", "remove head (gay)") 
+others:Element("Toggle", "remove head (best)") 
 others:Element("Toggle", "no animations") 
 others:Element("Dropdown", "leg movement", {options = {"off", "slide", "slide2" , "slide3"}}) 
 
@@ -6419,7 +6419,7 @@ RunService.RenderStepped:Connect(function(step)
 			Root.CFrame = CF(Root.Position) * CFAngles(0, -ATAN2(CamLook.Z, CamLook.X) + RAD(270), 0) 
 			game.ReplicatedStorage.Events.ControlTurn:FireServer(CamLook.Y, LocalPlayer.Character:FindFirstChild("Climbing") and true or false) 
 		end
-		if values.rage.others["remove head (gay)"].Toggle then 
+		if values.rage.others["remove head (best)"].Toggle then 
 			if LocalPlayer.Character:FindFirstChild("FakeHead") then 
 				LocalPlayer.Character.FakeHead:Destroy() 
 			end 
@@ -6758,7 +6758,7 @@ end
 				end
 			end)()
 		end
-		if (values.rage.aimbot["get real"].Toggle and RageTarget ~= nil) then 
+		if (values.rage.aimbot["Nazi Aim(Very Good)"].Toggle and RageTarget ~= nil) then 
 			coroutine.wrap(function() 
 				if Players:GetPlayerFromCharacter(args[1].Parent) or args[1] == RageTarget then 
 					local hrp = RageTarget.Parent.HumanoidRootPart.Position 
